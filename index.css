@@ -39,3 +39,10 @@ h1 {
 .selected {
   background: blue;
 }
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+}
