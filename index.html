@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Color Game</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>
+	The Great 
+	<br>
+	<span id="colorDisplay">RGB</span> 
+	<br>
+	Color Game
+</h1>
 
-  <h1>
-    The Great
-    <br>
-    <span id = "colorDisplay">RGB</span>
-    <br>
-    Guessing Game
-  </h1>
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
+</div>
 
-    <div id = "stripe">
-      <button id = "reset" type="button" name="button">New Colors</button>
-      <span id = "message" ></span>
-      <button id = "easyBtn" type="button" name="button">Easy</button>
-      <button id = "difficultBtn" class = "selected" type="button" name="button">Difficult</button>
-    </div>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
 
-    <div id="container">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-     </div>
-  <script type="text/javascript" src = "index.js">
-
-  </script>
-  </body>
+<script type="text/javascript" src="index.js"></script>
+</body>
 </html>
