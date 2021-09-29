@@ -30,6 +30,11 @@ h1 {
   font-size: 200%;
 }
 
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
 #stripe {
   background-color: white;
   height: 30px;
@@ -38,6 +43,8 @@ h1 {
 }
 .selected {
   background: blue;
+  color: white;
+  background: steelblue;
 }
 
 button {
@@ -45,4 +52,13 @@ button {
   background: none;
   text-transform: uppercase;
   height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+}
+button:hover {
+  color: white;
+  background: steelblue;
 }
