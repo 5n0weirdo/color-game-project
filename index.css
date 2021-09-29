@@ -9,10 +9,11 @@ body {
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+  border-radius: 40%;
+  transition: background 0.5s;
 }
-
 #container {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 600px;
 }
 h1 {
@@ -58,6 +59,7 @@ button {
   font-size: inherit;
   transition: all 0.3s;
 }
+
 button:hover {
   color: white;
   background: steelblue;
