@@ -21,6 +21,16 @@ var difficultBtn = document.querySelector("#difficultBtn");
 easyBtn.addEventListener("click", function() {
   easyBtn.classList.add("selected");
   difficultBtn.classList.remove("selected");
+  colors = generateRandomColors(3);
+  pickedColor = pickColor();
+  colorDisplay.textContent = pickedColor;
+  for(var i = 0; i < squares.length; i++) {
+    if(colors[i]) {
+      squares[i].style.backgroundColor = colors[i];
+    } else {
+      squares[i].style.display = "none";
+    }
+  }
 });
 
 difficultBtn.addEventListener("click", function() {
