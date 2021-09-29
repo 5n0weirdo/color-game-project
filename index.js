@@ -25,7 +25,7 @@ colorDisplay.textContent = pickedColor;
       if(clickedColor === pickedColor) {
         alert("Correct!");
       } else {
-        alert("Wrong!");
+        this.style.backgroundColor = "#232323";
       }
     });
 
