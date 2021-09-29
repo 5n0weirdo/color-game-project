@@ -15,6 +15,18 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
+var easyBtn = document.querySelector("#easyBtn");
+var difficultBtn = document.querySelector("#difficultBtn");
+
+easyBtn.addEventListener("click", function() {
+  easyBtn.classList.add("selected");
+  difficultBtn.classList.remove("selected");
+});
+
+difficultBtn.addEventListener("click", function() {
+  difficultBtn.classList.add("selected");
+  easyBtn.classList.remove("selected");
+});
 
 resetButton.addEventListener("click", function() {
   // generate all new colors
